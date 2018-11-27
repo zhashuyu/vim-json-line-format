@@ -9,7 +9,7 @@ def json_line_format_print():
         formatted = json.dumps(
                         json.loads(vim.current.line, object_pairs_hook=OrderedDict),
                         ensure_ascii=False, indent=4)
-        print formatted
+        print(formatted)
     except Exception as e:
         print e
 
@@ -24,7 +24,7 @@ def json_line_format_write():
             buff.append(line, line_num+i)
         vim.command('normal dd')
     except Exception as e:
-        print e
+        print(e)
 EOF
 
 nnoremap <leader>jw :python json_line_format_write()<CR>
