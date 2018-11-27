@@ -11,7 +11,7 @@ def json_line_format_print():
                         ensure_ascii=False, indent=4)
         print(formatted)
     except Exception as e:
-        print e
+        print(e)
 
 def json_line_format_write():
     line_num = vim.current.window.cursor[0]
