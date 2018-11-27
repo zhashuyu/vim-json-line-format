@@ -1,4 +1,4 @@
-python << EOF
+python3 << EOF
 import vim
 import json
 from collections import OrderedDict
